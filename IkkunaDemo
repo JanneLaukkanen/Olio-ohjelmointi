@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace Demot
 {
+    class Ikkuna
+    {
+        //properties = ominaisuudet
+        public float Leveys { get; set; }
+        public float Korkeus { get; set; }
+        //methods = metodit
+        public float LaskePintaala()
+        {
+            return Leveys * Korkeus;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -30,6 +41,14 @@ namespace Demot
             Piiri = 2 * (Leveys + Korkeus);
 
             Console.WriteLine("Ikkunan ala {0} ja piiri {1}", Ala, Piiri);
+            //sama homma olion avulla
+            Ikkuna ikkuna = new Demot.Ikkuna();
+            ikkuna.Leveys = Leveys;
+            ikkuna.Korkeus = Korkeus;
+            Ala = ikkuna.LaskePintaala();
+            Console.WriteLine("Olion avulla laskettu ikkunan ala {0} ja piiri {1}", Ala, Piiri);
+
+
         }
     }
 }
