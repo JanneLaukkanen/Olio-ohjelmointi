@@ -11,6 +11,14 @@ namespace Demot
         //properties = ominaisuudet
         public float Leveys { get; set; }
         public float Korkeus { get; set; }
+        public float Piiri
+        {
+            get { return 2 * (Leveys + Korkeus); }
+        }
+        public float Pintaala
+        {
+            get { return Leveys * Korkeus; }
+        }
         //methods = metodit
         public float LaskePintaala()
         {
@@ -45,9 +53,8 @@ namespace Demot
             Ikkuna ikkuna = new Demot.Ikkuna();
             ikkuna.Leveys = Leveys;
             ikkuna.Korkeus = Korkeus;
-            Ala = ikkuna.LaskePintaala();
-            Console.WriteLine("Olion avulla laskettu ikkunan ala {0} ja piiri {1}", Ala, Piiri);
-
+            //Ala = ikkuna.LaskePintaala();
+            Console.WriteLine("Olion avulla laskettuna ikkunan ala {0} ja piiri {1}", ikkuna.Pintaala, ikkuna.Piiri);
 
         }
     }
