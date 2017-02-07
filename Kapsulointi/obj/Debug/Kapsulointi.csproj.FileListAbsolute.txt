@@ -1,0 +1,6 @@
+Z:\K2939\Olio\Kapsulointi\bin\Debug\Kapsulointi.exe.config
+Z:\K2939\Olio\Kapsulointi\bin\Debug\Kapsulointi.exe
+Z:\K2939\Olio\Kapsulointi\bin\Debug\Kapsulointi.pdb
+Z:\K2939\Olio\Kapsulointi\obj\Debug\Kapsulointi.csprojResolveAssemblyReference.cache
+Z:\K2939\Olio\Kapsulointi\obj\Debug\Kapsulointi.exe
+Z:\K2939\Olio\Kapsulointi\obj\Debug\Kapsulointi.pdb
