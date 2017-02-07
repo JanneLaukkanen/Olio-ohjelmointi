@@ -54,8 +54,6 @@ namespace Hissi
                 }
             } while (result);
 
-            Console.WriteLine("Press enter key to continue...");
-            Console.ReadLine();
         }
     }
 }
